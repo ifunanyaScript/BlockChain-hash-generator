@@ -5,7 +5,7 @@ The blockchain from it's name is a link of several blocks of transactions, i.e T
 like so;
 | Sender      | Receiver    | Amount  |
 | ----------- | ----------- |---------|
-| Header      | Title       | $900    |
-| Paragraph   | Text        |$45678   |
+| user_id     | user_id     | $900    |
+| user_id     | user_id     |$45678   |
 
 
