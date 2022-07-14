@@ -34,5 +34,5 @@ Currently on the blockchain the number of preceeding zeros required for a new ha
 The main reason for high difficulty is to secure the network from fraud.
 
 ###### How to generate the hash?
-
+After passing the parameters to the cryptographic function, you would expect it to come up with a new valid hash right? Well it's not that easy. There's a 
 
