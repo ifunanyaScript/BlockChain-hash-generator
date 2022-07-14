@@ -29,6 +29,10 @@ All these parameters are passed to the cryptographic function, which then genera
 ###### But why is mining so hard?
 Well it's because of the difficulty level. In simple sense the difficulty level is basically the number of zeros preceeding the hash, for example;
 "0000000000jg990m1l3sv458m00lkrilkf66nmb0kl9a367klmno341v67uk0m07", the number of preceeding zeros is 10, so it's safe to say, the difficulty is level 10.<br> 
-Currently on the blockchain the number of preceeding zeros required for a new hash is 19, such like "0000000000000000000jv458m00lkrilkf66nmb0kl9a367klmno341v67uk0m07",
-To 
+Currently on the blockchain the number of preceeding zeros required for a new hash is 19, such like "0000000000000000000jv458m00lkrilkf66nmb0kl9a367klmno341v67uk0m07"
+<br>
+The main reason for high difficulty is to secure the network from fraud.
+
+###### How to generate the hash?
+
 
