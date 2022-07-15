@@ -24,7 +24,7 @@ def mining_loop(block_number, transactions, previous_hash, pre_zeros_required):
 
 # Program run
 if __name__ == "__main__":
-    pre_zeros_required = 6
+    pre_zeros_required = 4
     transactions = """
     Choco->Razzee->78,
     Ifunanya->Script->456
@@ -33,8 +33,8 @@ if __name__ == "__main__":
     start_time = time.time()
     print(f"Mining started!")
     new_block_hash =  mining_loop(7, transactions, "000000067hjg990m1l3sv458m00lkrilkf66nmb0kl9a367klmno341v67uk0m07", pre_zeros_required)
-    total_time = str((time.time() - start_time))
-    print(f"Mining took {total_time:.4f} seconds")
+    total_time = float((time.time() - start_time))
+    print(f"Mining took {total_time:.3f} seconds")
     print(new_block_hash)
 
 # ifunanyaScript
