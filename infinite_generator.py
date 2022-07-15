@@ -1,6 +1,6 @@
 # Import the cryptographic function for generating the hash.
 from hashlib import sha256
-
+# Import time to calculate how long the mining process takes.
 import time
 
 def hash_generator(text):
