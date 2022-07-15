@@ -28,3 +28,5 @@ if __name__ == "__main__":
     total_time = str((time.time() - start_time))
     print(f"Mining took {total_time:.3f} seconds")
     print(new_block_hash)
+
+# ifunanyaScript
