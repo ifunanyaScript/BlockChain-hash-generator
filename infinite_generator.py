@@ -8,10 +8,11 @@ def hash_generator(text):
     return sha256(text.encode("ascii")).hexdigest()
 
 def mining_loop(block_number, transactions, previous_hash, pre_zeros_required):
-    """ This function will run infinitely, until we get the right nonce
-        that generates a valid hash. 
-        There is a +1 increment to the nonce whenever the generated hash is
-        invalid
+    """ This function will run until we get the right nonce that generates
+        a valid hash. 
+        As we loop, there is a +1 increment to the nonce whenever the generated
+        hash is invalid, and this loop continues infinitely until we get a 
+        valid hash.
     """
     nonce = 1
     while True:
