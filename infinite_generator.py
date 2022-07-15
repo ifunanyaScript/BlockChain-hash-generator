@@ -3,8 +3,10 @@ from hashlib import sha256
 # Import time to calculate how long the mining process takes.
 import time
 
+# The hash_generator function will be used in the mining loop.
 def hash_generator(text):
     return sha256(text.encode("ascii")).hexdigest()
+
 
 def mining_loop(block_number, transactions, previous_hash, pre_zeros_required):
     nonce = 1
