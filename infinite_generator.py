@@ -1,4 +1,6 @@
+# Import the cryptographic function for generating the hash.
 from hashlib import sha256
+
 import time
 
 def hash_generator(text):
