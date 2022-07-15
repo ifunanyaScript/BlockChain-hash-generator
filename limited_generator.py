@@ -24,15 +24,22 @@ def mining_loop(block_number, transactions, previous_hash, pre_zeros_required):
 
 # Program run
 if __name__ == "__main__":
-    pre_zeros_required = 4
+    # The transaction/data contains some other info, I just kept it concise because I'm running this on my PC. 
     transactions = """
     Choco->Razzee->78,
     Ifunanya->Script->456
+    Git->Hub->845,
+    Thor->Loki->650
+    Ham->Burger->900,
+    Me->Myself->1100
     """
+    block_number = 745134
+    pre_zeros_required = 19
+    
     # Remember to calculate time as you mine.
     start_time = time.time()
     print(f"Mining started!")
-    new_block_hash =  mining_loop(7, transactions, "000000067hjg990m1l3sv458m00lkrilkf66nmb0kl9a367klmno341v67uk0m07", pre_zeros_required)
+    new_block_hash =  mining_loop(block_number, transactions, "00000000000000000000020b9c435410024003a396ae353de19ca13e3f611bf4", pre_zeros_required)
     total_time = float((time.time() - start_time))
     print(f"Mining took {total_time:.3f} seconds")
     print(new_block_hash)
